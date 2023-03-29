@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Restro from "./components/Basics/Restro";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Restro/>
+     <div> Hello Jazz !</div>
+      <MyName/>
+    </>
+  )
+};
+
+const MyName = () => {
+  return (
+  <h1>Newton Jas</h1>
+ 
+  )
 }
 
-export default App;
+
+export default App
+
+// // import './App.css';
+
+// function App() {
+//   return (
+//     <div className="App">
+//    <h1>Hello Jas</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
